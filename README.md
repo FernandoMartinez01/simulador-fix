@@ -15,10 +15,10 @@ Una app educativa e interactiva para aprender cómo funciona el protocolo **FIX 
 
 ## 🧪 Tecnologías usadas
 
-- **Python 3** + **Flask** – backend minimalista y veloz.
-- **HTML5 + CSS3** – estructura y estilo limpio.
+- **Python 3** + **Flask** – backend.
+- **HTML5 + CSS3** – estructura y estilo.
 - **Jinja2** – para renderizado de templates.
-- Diseño responsive con un toque moderno.
+- Diseño responsive.
 
 ---
 
@@ -28,22 +28,6 @@ Una app educativa e interactiva para aprender cómo funciona el protocolo **FIX 
 - Si querés adaptarlo a un entorno real, deberás agregar configuraciones específicas en archivos que no deben subirse a este repositorio.
 
 ---
-
-## 🗂️ Estructura del proyecto
-fix-simulator/ 
-│ 
-├── static/ # Archivos estáticos (CSS, imágenes) 
-│ └── style.css 
-│ 
-├── templates/ # Templates HTML (Jinja2) 
-│ ├── base.html 
-│ ├── index.html 
-│ ├── simulador.html 
-│ ├── errores.html 
-│ └── ... 
-│ ├── app.py # App principal de Flask 
-├── requirements.txt # Dependencias del proyecto 
-└── README.md
 
 ## 📬 Contacto
 
