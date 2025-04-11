@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Simulador FIX{% endblock %}
+
+{% block content %}
+<h1>Simulador de mensaje FIX tipo "D"</h1>
+<h2>Simulador de mensajes FIX</h2>
+<p>
+    En esta sección vas a poder aprender cómo se arma un mensaje FIX de tipo *New Order Single*.
+    Completá los campos del formulario con los valores que quieras y al enviar te vamos a mostrar cómo queda estructurado el mensaje final.
+</p>
+<p>
+    Este simulador te va a ayudar a entender mejor los tags más comunes y su función dentro del mensaje.
+</p>
+
+<form method="POST" class="fix-form">
+    <label for="8">8 - BeginString</label>
+    <input type="text" name="8" value="FIX.4.4" required>
+    <small>Versión del protocolo FIX. Ej: FIX.4.4</small>
+
+    <label for="49">49 - SenderCompID</label>
+    <input type="text" name="49" required>
+    <small>Identificador del emisor del mensaje (quién lo envía).</small>
+
+    <label for="56">56 - TargetCompID</label>
+    <input type="text" name="56" required>
+    <small>Identificador del receptor del mensaje (a quién va).</small>
+
+    <label for="34">34 - MsgSeqNum</label>
+    <input type="number" name="34" required>
+    <small>Número de secuencia del mensaje. Se incrementa en cada envío.</small>
+
+    <label for="11">11 - ClOrdID</label>
+    <input type="text" name="11" required>
+    <small>ID único de la orden asignado por el cliente.</small>
+
+    <label for="55">55 - Symbol</label>
+    <input type="text" name="55" required>
+    <small>Símbolo del activo. Ej: GGAL, AAPL, BTCUSD.</small>
+
+    <label for="54">54 - Side</label>
+    <select name="54" required>
+        <option value="1">1 - Compra</option>
+        <option value="2">2 - Venta</option>
+    </select>
+    <small>Indica si es una orden de compra (1) o de venta (2).</small>
+
+    <label for="38">38 - OrderQty</label>
+    <input type="number" name="38" required>
+    <small>Cantidad de activos a comprar o vender.</small>
+
+    <label for="40">40 - OrdType</label>
+    <select name="40" required>
+        <option value="1">1 - Market</option>
+        <option value="2">2 - Limit</option>
+    </select>
+    <small>Tipo de orden: Market (1) ejecuta al precio actual, Limit (2) permite fijar precio.</small>
+
+    <label for="44">44 - Price</label>
+    <input type="text" name="44">
+    <small>Precio límite (requerido si elegís orden Limit).</small>
+
+    <button type="submit">Procesar mensaje</button>
+</form>
+
+
+{% if fix_message %}
+    <div class="output">
+        <h2>Mensaje FIX generado:</h2>
+        <code>{{ fix_message }}</code>
+    </div>
+{% endif %}
+{% endblock %}

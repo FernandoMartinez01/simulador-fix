@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Simulador FIX{% endblock %}
+
+{% block content %}
+<h1>Errores comunes en FIX</h1>
+<p>Esta sección está pensada como referencia rápida para personas nuevas en soporte. Incluye problemas frecuentes que pueden surgir en el uso del protocolo FIX, sus posibles causas y cómo abordarlos.</p>
+
+<div class="errores-container">
+
+  <div class="error-card">
+    <h3>🔒 Usuario bloqueado</h3>
+    <p><strong>Posible causa:</strong> El usuario intentó autenticarse con contraseña incorrecta más de tres veces seguidas.</p>
+    <p><strong>Acción recomendada:</strong> Verificar con el usuario si recuerda la contraseña correcta. En caso de bloqueo, solicitar al área correspondiente el desbloqueo de la cuenta.</p>
+  </div>
+
+  <div class="error-card">
+    <h3>📉 No llega información de mercado</h3>
+    <p><strong>Posible causa:</strong> El cliente no envió el mensaje de suscripción a las ruedas necesarias.</p>
+    <p><strong>Acción recomendada:</strong> Confirmar si se envió un mensaje tipo <code>V</code> (Market Data Request). Validar los campos <code>262</code> (MDReqID), <code>263</code> (SubscriptionRequestType) y que se estén solicitando correctamente las ruedas deseadas.</p>
+  </div>
+
+  <div class="error-card">
+    <h3>❌ Credenciales inválidas</h3>
+    <p><strong>Posible causa:</strong> Los tags de autenticación están mal configurados (ej. <code>49</code>, <code>56</code>, <code>553</code>, <code>554</code>).</p>
+    <p><strong>Acción recomendada:</strong> Verificar los valores enviados en los campos <code>SenderCompID</code>, <code>TargetCompID</code>, <code>Username</code> y <code>Password</code>. Comparar contra los datos oficiales del entorno correspondiente.</p>
+  </div>
+
+  <div class="error-card">
+    <h3>📡 No se puede establecer conexión</h3>
+    <p><strong>Posible causa:</strong> Problemas de red o configuraciones incorrectas de IP/puerto.</p>
+    <p><strong>Acción recomendada:</strong> Solicitar al usuario que realice un <code>telnet [IP] [PUERTO]</code> desde su entorno. Verificar firewalls, proxies, VPNs y que esté utilizando el entorno correcto (prod vs test).</p>
+  </div>
+
+  <div class="error-card">
+    <h3>📬 Rechazo de mensaje (MsgType 3)</h3>
+    <p><strong>Posible causa:</strong> El mensaje enviado contiene un tag inválido o falta un campo obligatorio.</p>
+    <p><strong>Acción recomendada:</strong> Revisar el mensaje completo y los campos indicados en los tags <code>371</code> (Tag con error) y <code>372</code> (MsgType afectado). Verificar el formato y valor del tag mencionado.</p>
+  </div>
+
+  <div class="error-card">
+    <h3>⏳ Heartbeat fallido o desconexión por timeout</h3>
+    <p><strong>Posible causa:</strong> El cliente no envió mensajes de mantenimiento de sesión (Heartbeat o TestRequest) en el tiempo esperado.</p>
+    <p><strong>Acción recomendada:</strong> Validar que el cliente esté implementando correctamente el manejo de la sesión FIX. Confirmar si el <code>HeartBtInt</code> negociado está siendo respetado.</p>
+  </div>
+
+</div>
+
+{% endblock %}

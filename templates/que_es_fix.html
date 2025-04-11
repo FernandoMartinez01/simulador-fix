@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}¿Qué es FIX?{% endblock %}
+
+{% block content %}
+<h1>¿Qué es FIX?</h1>
+<p>
+    FIX (Financial Information eXchange) es un protocolo de mensajería estándar utilizado en los mercados financieros
+    para comunicar información entre participantes. En A3 Mercados, se utiliza principalmente para:
+</p>
+
+<ul>
+    <li><strong>📡 Market Data:</strong> los agentes reciben información de precios del mercado en tiempo real.</li>
+    <li><strong>📤 Order Routing:</strong> los agentes pueden enviar órdenes de compra/venta al sistema.</li>
+</ul>
+
+<h2>Tipos de agentes FIX</h2>
+<ul>
+    <li><strong>Vendors:</strong> solo acceden a market data. No pueden enviar órdenes.</li>
+    <li><strong>Trading Agents:</strong> reciben market data y también pueden enviar órdenes de compra/venta.</li>
+</ul>
+
+<h2>¿Cómo se estructura un mensaje FIX?</h2>
+<p>Los mensajes FIX son secuencias de pares clave-valor con tags numéricos. Por ejemplo:</p>
+
+<pre>
+8=FIX.4.4|35=D|49=CLIENT1|56=A3|55=YPF|54=1|38=100|40=2|44=800.50|10=128|
+</pre>
+
+<p>Cada número representa un campo definido en el protocolo, y juntos forman un mensaje con un propósito específico (como enviar una orden).</p>
+{% endblock %}

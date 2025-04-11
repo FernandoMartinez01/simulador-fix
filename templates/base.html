@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}FIX Simulator{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/que-es-fix">¿Qué es FIX?</a></li>
+            <li><a href="/como-armar-fix">¿Cómo armar un mensaje?</a></li>
+            <li><a href="/simulador">Simulador</a></li>
+            <li><a href="/errores">Errores comunes</a></li>
+            <li><a href="/logs">Logs</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+
