@@ -1,0 +1,15 @@
+fix_tags = {
+    "8": "BeginString - Versión del protocolo FIX",
+    "9": "BodyLength - Largo del cuerpo del mensaje",
+    "35": "MsgType - Tipo de mensaje",
+    "34": "MsgSeqNum - Número de secuencia",
+    "49": "SenderCompID - ID del emisor",
+    "56": "TargetCompID - ID del receptor",
+    "11": "ClOrdID - ID único de la orden del cliente",
+    "55": "Symbol - Símbolo del instrumento",
+    "54": "Side - Lado de la orden (1=Buy, 2=Sell)",
+    "38": "OrderQty - Cantidad",
+    "40": "OrdType - Tipo de orden (1=Market, 2=Limit)",
+    "44": "Price - Precio (si aplica)",
+    "10": "CheckSum - Suma de verificación",
+}

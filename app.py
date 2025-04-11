@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from fix_tags import fix_tags
 
 app = Flask(__name__)
 
@@ -42,9 +43,26 @@ def simulador():
 def errores():
     return render_template("errores.html")
 
-@app.route("/logs")
-def logs():
-    return render_template("logs.html")
+@app.route('/validar', methods=['GET', 'POST'])
+def validar():
+    parsed_fix = []
+    raw_fix = ""
+
+    if request.method == 'POST':
+        raw_fix = request.form['raw_fix']
+        if raw_fix:
+            fix_pairs = raw_fix.strip().split('|')
+            for pair in fix_pairs:
+                if '=' in pair:
+                    tag, value = pair.split('=', 1)
+                    description = fix_tags.get(tag, 'Descripción no encontrada')
+                    parsed_fix.append({
+                        'tag': tag,
+                        'value': value,
+                        'description': description
+                    })
+
+    return render_template('validar.html', parsed_fix=parsed_fix, raw_fix=raw_fix)
 
 if __name__ == "__main__":
     app.run(debug=True)
