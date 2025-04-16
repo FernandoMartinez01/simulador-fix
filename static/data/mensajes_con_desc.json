@@ -1,0 +1,714 @@
+{
+  "AG": {
+    "name": "QuoteRequestReject",
+    "description": "Rechazo de solicitud de cotización."
+  },
+  "AJ": {
+    "name": "QuoteResponse",
+    "description": "Respuesta a solicitud de cotización."
+  },
+  "AI": {
+    "name": "QuoteStatusReport",
+    "description": "Reporte de estado de cotización."
+  },
+  "a": {
+    "name": "QuoteStatusRequest",
+    "description": "Solicitud de estado de cotización."
+  },
+  "o": {
+    "name": "RegistrationInstructions",
+    "description": "Instrucciones de registro."
+  },
+  "p": {
+    "name": "RegistrationInstructionsResponse",
+    "description": "Respuesta a instrucciones de registro."
+  },
+  "3": {
+    "name": "Reject",
+    "description": "Rechazo de mensaje."
+  },
+  "AN": {
+    "name": "RequestForPositions",
+    "description": "Solicitud de posiciones."
+  },
+  "AO": {
+    "name": "RequestForPositionsAck",
+    "description": "Reconocimiento de solicitud de posiciones."
+  },
+  "2": {
+    "name": "ResendRequest",
+    "description": "Solicitud de reenvío de mensajes."
+  },
+  "AH": {
+    "name": "RFQRequest",
+    "description": "Solicitud de cotización RFQ."
+  },
+  "d": {
+    "name": "SecurityDefinition",
+    "description": "Definición de seguridad."
+  },
+  "c": {
+    "name": "SecurityDefinitionRequest",
+    "description": "Solicitud de definición de seguridad."
+  },
+  "BP": {
+    "name": "SecurityDefinitionUpdateReport",
+    "description": "Reporte de actualización de definición de seguridad."
+  },
+  "y": {
+    "name": "SecurityList",
+    "description": "Lista de seguridad."
+  },
+  "x": {
+    "name": "SecurityListRequest",
+    "description": "Solicitud de lista de seguridad."
+  },
+  "BK": {
+    "name": "SecurityListUpdateReport",
+    "description": "Reporte de actualización de lista de seguridad."
+  },
+  "CO": {
+    "name": "SecurityMassStatus",
+    "description": "Estado masivo de seguridad."
+  },
+  "CN": {
+    "name": "SecurityMassStatusRequest",
+    "description": "Solicitud de estado masivo de seguridad."
+  },
+  "EG": {
+    "name": "SecurityRiskMetricsReport",
+    "description": "Reporte de métricas de riesgo de seguridad."
+  },
+  "f": {
+    "name": "SecurityStatus",
+    "description": "Estado de seguridad."
+  },
+  "e": {
+    "name": "SecurityStatusRequest",
+    "description": "Solicitud de estado de seguridad."
+  },
+  "v": {
+    "name": "SecurityTypeRequest",
+    "description": "Solicitud de tipo de seguridad."
+  },
+  "w": {
+    "name": "SecurityTypes",
+    "description": "Tipos de seguridad."
+  },
+  "4": {
+    "name": "SequenceReset",
+    "description": "Reinicio de secuencia."
+  },
+  "AV": {
+    "name": "SettlementInstructionRequest",
+    "description": "Solicitud de instrucción de liquidación."
+  },
+  "T": {
+    "name": "SettlementInstructions",
+    "description": "Instrucciones de liquidación."
+  },
+  "BQ": {
+    "name": "SettlementObligationReport",
+    "description": "Reporte de obligaciones de liquidación."
+  },
+  "EE": {
+    "name": "SettlementStatusReport",
+    "description": "Reporte de estado de liquidación."
+  },
+  "EF": {
+    "name": "SettlementStatusReportAck",
+    "description": "Reconocimiento de reporte de estado de liquidación."
+  },
+  "A": {
+    "name": "Logon",
+    "description": "Mensaje de inicio de sesión en el protocolo FIX."
+  },
+  "5": {
+    "name": "Logout",
+    "description": "Mensaje de cierre de sesión en el protocolo FIX."
+  },
+  "CH": {
+    "name": "MarginRequirementInquiry",
+    "description": "Consulta de requisitos de margen en el protocolo FIX."
+  },
+  "CI": {
+    "name": "MarginRequirementInquiryAck",
+    "description": "Respuesta a consulta de requisitos de margen en FIX."
+  },
+  "CJ": {
+    "name": "MarginRequirementReport",
+    "description": "Reporte de requisitos de margen en el protocolo FIX."
+  },
+  "X": {
+    "name": "MarketDataIncrementalRefresh",
+    "description": "Actualización incremental de datos de mercado en FIX."
+  },
+  "DR": {
+    "name": "MarketDataReport",
+    "description": "Reporte de datos de mercado en el protocolo FIX."
+  },
+  "V": {
+    "name": "MarketDataRequest",
+    "description": "Solicitud de datos de mercado en el protocolo FIX."
+  },
+  "Y": {
+    "name": "MarketDataRequestReject",
+    "description": "Rechazo a solicitud de datos de mercado en FIX."
+  },
+  "W": {
+    "name": "MarketDataSnapshotFullRefresh",
+    "description": "Actualización completa de datos de mercado en FIX."
+  },
+  "BI": {
+    "name": "TradingSessionListRequest",
+    "description": "Solicitud de lista de sesiones de trading."
+  },
+  "BS": {
+    "name": "TradingSessionListUpdateReport",
+    "description": "Informe de actualización de lista de sesiones de trading."
+  },
+  "h": {
+    "name": "TradingSessionStatus",
+    "description": "Estado de la sesión de trading."
+  },
+  "g": {
+    "name": "TradingSessionStatusRequest",
+    "description": "Solicitud de estado de sesión de trading."
+  },
+  "CB": {
+    "name": "UserNotification",
+    "description": "Notificación al usuario."
+  },
+  "BE": {
+    "name": "UserRequest",
+    "description": "Solicitud de usuario."
+  },
+  "BF": {
+    "name": "UserResponse",
+    "description": "Respuesta de usuario."
+  },
+  "n": {
+    "name": "XMLnonFIX",
+    "description": "Mensaje no FIX en formato XML."
+  },
+  "CQ": {
+    "name": "AccountSummaryReport",
+    "description": "Informe que resume el estado de una cuenta, incluyendo balances y posiciones actuales."
+  },
+  "BL": {
+    "name": "AdjustedPositionReport",
+    "description": "Reporte que muestra las posiciones ajustadas después de eventos corporativos o ajustes manuales."
+  },
+  "7": {
+    "name": "Advertisement",
+    "description": "Mensaje utilizado para anunciar una oferta o demanda de valores en el mercado."
+  },
+  "EJ": {
+    "name": "AlgoCertificateReport",
+    "description": "Informe que certifica la ejecución de algoritmos de trading según parámetros establecidos."
+  },
+  "EK": {
+    "name": "AlgoCertificateReportAck",
+    "description": "Confirmación de recepción del informe de certificación de algoritmos de trading."
+  },
+  "EH": {
+    "name": "AlgoCertificateRequest",
+    "description": "Solicitud para obtener la certificación de un algoritmo de trading específico."
+  },
+  "EI": {
+    "name": "AlgoCertificateRequestAck",
+    "description": "Confirmación de recepción de la solicitud de certificación de un algoritmo de trading."
+  },
+  "J": {
+    "name": "AllocationInstruction",
+    "description": "Instrucción para asignar operaciones a cuentas específicas después de la ejecución."
+  },
+  "P": {
+    "name": "AllocationInstructionAck",
+    "description": "Confirmación de recepción y procesamiento de una instrucción de asignación."
+  },
+  "BM": {
+    "name": "AllocationInstructionAlert",
+    "description": "Alerta que notifica sobre una instrucción de asignación pendiente o en proceso."
+  },
+  "AK": {
+    "name": "Confirmation",
+    "description": "Mensaje que confirma una operación realizada entre contrapartes, detallando los términos del acuerdo."
+  },
+  "AU": {
+    "name": "ConfirmationAck",
+    "description": "Confirma la recepción de un mensaje de confirmación de operación entre contrapartes."
+  },
+  "BH": {
+    "name": "ConfirmationRequest",
+    "description": "Solicita detalles de confirmación para una o más operaciones realizadas previamente."
+  },
+  "BO": {
+    "name": "ContraryIntentionReport",
+    "description": "Informa la intención contraria sobre una posición antes del vencimiento de opciones."
+  },
+  "t": {
+    "name": "CrossOrderCancelReplaceRequest",
+    "description": "Solicita modificar una orden cruzada previamente enviada, incluyendo nuevos detalles de la operación."
+  },
+  "u": {
+    "name": "CrossOrderCancelRequest",
+    "description": "Solicita cancelar una orden cruzada antes de que sea ejecutada en el mercado."
+  },
+  "DS": {
+    "name": "CrossRequest",
+    "description": "Inicia una solicitud para ejecutar una operación cruzada entre dos participantes."
+  },
+  "DT": {
+    "name": "CrossRequestAck",
+    "description": "Confirma la recepción y el estado de una solicitud de operación cruzada."
+  },
+  "AA": {
+    "name": "DerivativeSecurityList",
+    "description": "Contiene una lista de valores derivados, incluyendo contratos y activos subyacentes."
+  },
+  "z": {
+    "name": "DerivativeSecurityListRequest",
+    "description": "Solicita una lista de valores derivados disponibles para negociación."
+  },
+  "BR": {
+    "name": "DerivativeSecurityListUpdateReport",
+    "description": "Informa actualizaciones sobre la lista de valores derivados ya publicada anteriormente."
+  },
+  "Q": {
+    "name": "DontKnowTrade",
+    "description": "Indica que una operación no puede ser reconocida por el receptor del mensaje."
+  },
+  "C": {
+    "name": "Email",
+    "description": "Mensaje con formato de correo electrónico para comunicación libre entre participantes."
+  },
+  "BN": {
+    "name": "ExecutionAck",
+    "description": "Reconoce la recepción de un mensaje de ejecución, sin confirmar detalles del comercio."
+  },
+  "8": {
+    "name": "ExecutionReport",
+    "description": "Informe detallado sobre el estado de una orden: ejecutada, cancelada o rechazada."
+  },
+  "0": {
+    "name": "Heartbeat",
+    "description": "Mensaje periódico para mantener activa la conexión entre sistemas durante inactividad."
+  },
+  "6": {
+    "name": "IOI",
+    "description": "Expresa interés en comprar o vender un instrumento, para invitar cotizaciones."
+  },
+  "K": {
+    "name": "ListCancelRequest",
+    "description": "Solicita la cancelación de una lista de órdenes enviadas anteriormente."
+  },
+  "L": {
+    "name": "ListExecute",
+    "description": "Inicia la ejecución de todas las órdenes contenidas en una lista enviada."
+  },
+  "N": {
+    "name": "ListStatus",
+    "description": "Proporciona el estado actual de cada orden dentro de una lista de órdenes."
+  },
+  "M": {
+    "name": "ListStatusRequest",
+    "description": "Solicita información sobre el estado de una lista de órdenes activa."
+  },
+  "m": {
+    "name": "ListStrikePrice",
+    "description": "Proporciona precios de ejercicio de opciones para instrumentos financieros listados."
+  },
+  "DU": {
+    "name": "AllocationInstructionAlertRequest",
+    "description": "Solicita la creación o modificación de una alerta para una instrucción de asignación pendiente."
+  },
+  "DV": {
+    "name": "AllocationInstructionAlertRequestAck",
+    "description": "Confirmación de la solicitud para la creación o modificación de una alerta en una instrucción de asignación."
+  },
+  "AS": {
+    "name": "AllocationReport",
+    "description": "Informe que detalla la asignación de una cantidad de valores a una cuenta específica."
+  },
+  "AT": {
+    "name": "AllocationReportAck",
+    "description": "Confirmación del informe de asignación previamente enviado por parte del receptor."
+  },
+  "BY": {
+    "name": "ApplicationMessageReport",
+    "description": "Informe sobre el estado de un mensaje de aplicación procesado en un sistema."
+  },
+  "BW": {
+    "name": "ApplicationMessageRequest",
+    "description": "Solicita el envío o el estado de un mensaje en un sistema de aplicaciones."
+  },
+  "BX": {
+    "name": "ApplicationMessageRequestAck",
+    "description": "Confirmación de la recepción de una solicitud de mensaje en el sistema de aplicaciones."
+  },
+  "AW": {
+    "name": "AssignmentReport",
+    "description": "Informe que confirma la asignación de una operación entre las partes involucradas."
+  },
+  "k": {
+    "name": "BidRequest",
+    "description": "Solicita cotizaciones o propuestas para comprar o vender un activo específico."
+  },
+  "l": {
+    "name": "BidResponse",
+    "description": "Respuesta a una solicitud de cotización, indicando las ofertas disponibles para la operación."
+  },
+  "j": {
+    "name": "BusinessMessageReject",
+    "description": "Mensaje que rechaza un mensaje comercial debido a error de formato o incompatibilidad."
+  },
+  "AY": {
+    "name": "CollateralAssignment",
+    "description": "Asignación de colateral en una transacción financiera como garantía para el cumplimiento."
+  },
+  "BB": {
+    "name": "CollateralInquiry",
+    "description": "Consulta sobre los detalles del colateral disponible o comprometido en una operación."
+  },
+  "BG": {
+    "name": "CollateralInquiryAck",
+    "description": "Confirmación de la recepción y procesamiento de una consulta sobre colateral."
+  },
+  "BA": {
+    "name": "CollateralReport",
+    "description": "Informe detallado sobre el estado y la cantidad de colateral asociado a una operación."
+  },
+  "DQ": {
+    "name": "CollateralReportAck",
+    "description": "Confirmación de la recepción y el estado del informe de colateral."
+  },
+  "AX": {
+    "name": "CollateralRequest",
+    "description": "Solicitud de colateral adicional o liberación de colateral en una operación."
+  },
+  "AZ": {
+    "name": "CollateralResponse",
+    "description": "Respuesta a una solicitud de colateral, indicando aceptación o rechazo de los términos."
+  },
+  "DP": {
+    "name": "MarketDataStatisticsReport",
+    "description": "Informe sobre estadísticas de datos de mercado, como precios y volúmenes de negociación."
+  },
+  "DO": {
+    "name": "MarketDataStatisticsRequest",
+    "description": "Solicitud de estadísticas sobre el comportamiento del mercado, incluyendo precios y transacciones."
+  },
+  "BU": {
+    "name": "MarketDefinition",
+    "description": "Define los detalles y reglas de un mercado, incluidos los instrumentos disponibles para negociación."
+  },
+  "BT": {
+    "name": "MarketDefinitionRequest",
+    "description": "Solicita los detalles de la definición de un mercado específico."
+  },
+  "BV": {
+    "name": "MarketDefinitionUpdateReport",
+    "description": "Informa sobre los cambios realizados en la definición de un mercado previamente establecido."
+  },
+  "DJ": {
+    "name": "MassOrder",
+    "description": "Mensaje que permite ejecutar un conjunto masivo de órdenes dentro de un mercado o plataforma."
+  },
+  "DK": {
+    "name": "MassOrderAck",
+    "description": "Confirmación de la recepción y ejecución de un mensaje de órdenes masivas."
+  },
+  "i": {
+    "name": "MassQuote",
+    "description": "Cotización para una serie de instrumentos financieros, generalmente en un contexto de negociación masiva."
+  },
+  "b": {
+    "name": "MassQuoteAck",
+    "description": "Confirmación de la recepción de una cotización masiva de un conjunto de instrumentos."
+  },
+  "AC": {
+    "name": "MultilegOrderCancelReplace",
+    "description": "Solicita la cancelación o reemplazo de una orden multileg, con varios instrumentos implicados."
+  },
+  "BC": {
+    "name": "NetworkCounterpartySystemStatusRequest",
+    "description": "Solicita información sobre el estado del sistema de contraparte de la red de negociación."
+  },
+  "BD": {
+    "name": "NetworkCounterpartySystemStatusResponse",
+    "description": "Respuesta sobre el estado del sistema de contraparte, indicando si está operativo o inactivo."
+  },
+  "s": {
+    "name": "NewOrderCross",
+    "description": "Crea una nueva orden de cruce, operando entre dos participantes en un mercado."
+  },
+  "E": {
+    "name": "NewOrderList",
+    "description": "Inicia una nueva lista de órdenes, que puede incluir múltiples activos o valores."
+  },
+  "AB": {
+    "name": "NewOrderMultileg",
+    "description": "Crea una orden que involucra múltiples instrumentos, permitiendo una estrategia multileg."
+  },
+  "D": {
+    "name": "NewOrderSingle",
+    "description": "Solicita la creación de una nueva orden para comprar o vender un instrumento financiero."
+  },
+  "B": {
+    "name": "News",
+    "description": "Mensaje que transmite noticias o información relevante a los participantes en el mercado."
+  },
+  "9": {
+    "name": "OrderCancelReject",
+    "description": "Rechazo de una solicitud para cancelar una orden previamente enviada al mercado."
+  },
+  "G": {
+    "name": "OrderCancelReplaceRequest",
+    "description": "Solicita la cancelación y reemplazo de una orden previamente registrada en el sistema."
+  },
+  "F": {
+    "name": "OrderCancelRequest",
+    "description": "Solicita la cancelación de una orden previamente registrada en el sistema de negociación."
+  },
+  "BZ": {
+    "name": "OrderMassActionReport",
+    "description": "Informe sobre el estado de la acción masiva de órdenes, como cancelaciones o modificaciones."
+  },
+  "CA": {
+    "name": "OrderMassActionRequest",
+    "description": "Solicita una acción masiva sobre un conjunto de órdenes, como cancelaciones o reemplazos."
+  },
+  "r": {
+    "name": "OrderMassCancelReport",
+    "description": "Informe sobre el estado de una acción masiva de cancelación de órdenes."
+  },
+  "q": {
+    "name": "OrderMassCancelRequest",
+    "description": "Solicita la cancelación masiva de órdenes en el sistema de negociación."
+  },
+  "AF": {
+    "name": "OrderMassStatusRequest",
+    "description": "Solicita el estado de una acción masiva de órdenes, como cancelaciones o modificaciones."
+  },
+  "H": {
+    "name": "OrderStatusRequest",
+    "description": "Solicita el estado de una orden específica dentro de un sistema de negociación."
+  },
+  "DI": {
+    "name": "PartyActionReport",
+    "description": "Informe sobre las acciones realizadas sobre una contraparte o parte involucrada en una transacción."
+  },
+  "DH": {
+    "name": "PartyActionRequest",
+    "description": "Solicita la acción sobre una contraparte en un contexto específico de una transacción."
+  },
+  "CX": {
+    "name": "PartyDetailsDefinitionRequest",
+    "description": "Solicita la definición de los detalles de una contraparte o parte involucrada en una transacción."
+  },
+  "CY": {
+    "name": "PartyDetailsDefinitionRequestAck",
+    "description": "Confirmación de la recepción y procesamiento de una solicitud de definición de detalles de una contraparte."
+  },
+  "CG": {
+    "name": "PartyDetailsListReport",
+    "description": "Informe sobre una lista de las contrapartes o partes involucradas en las transacciones."
+  },
+  "CF": {
+    "name": "PartyDetailsListRequest",
+    "description": "Solicita una lista de detalles relacionados con las contrapartes o partes involucradas."
+  },
+  "CK": {
+    "name": "PartyDetailsListUpdateReport",
+    "description": "Informe sobre la actualización de la lista de contrapartes involucradas en transacciones."
+  },
+  "DA": {
+    "name": "PartyEntitlementsDefinitionRequest",
+    "description": "Solicita la definición de los derechos o facultades de una contraparte dentro de un sistema."
+  },
+  "DB": {
+    "name": "PartyEntitlementsDefinitionRequestAck",
+    "description": "Confirmación de la recepción de la solicitud de definición de derechos de una contraparte."
+  },
+  "CV": {
+    "name": "PartyEntitlementsReport",
+    "description": "Informe sobre los derechos o facultades de una contraparte en relación con las transacciones."
+  },
+  "CU": {
+    "name": "PartyEntitlementsRequest",
+    "description": "Solicita la información de los derechos o facultades asociados a una contraparte."
+  },
+  "CZ": {
+    "name": "PartyEntitlementsUpdateReport",
+    "description": "Informe sobre las actualizaciones a los derechos de las contrapartes en el sistema."
+  },
+  "DF": {
+    "name": "PartyRiskLimitCheckRequest",
+    "description": "Solicita una comprobación sobre el cumplimiento de los límites de riesgo asociados a una contraparte."
+  },
+  "DG": {
+    "name": "PartyRiskLimitCheckRequestAck",
+    "description": "Confirmación de la solicitud de comprobación de los límites de riesgo de una contraparte."
+  },
+  "CS": {
+    "name": "PartyRiskLimitsDefinitionRequest",
+    "description": "Solicita la definición de los límites de riesgo establecidos para una contraparte o entidad."
+  },
+  "CT": {
+    "name": "PartyRiskLimitsDefinitionRequestAck",
+    "description": "Confirmación de la solicitud de definición de los límites de riesgo para una contraparte."
+  },
+  "CM": {
+    "name": "PartyRiskLimitsReport",
+    "description": "Informe sobre los límites de riesgo de una contraparte en el contexto de sus operaciones."
+  },
+  "DE": {
+    "name": "PartyRiskLimitsReportAck",
+    "description": "Confirmación de la recepción y procesamiento del informe de los límites de riesgo de una contraparte."
+  },
+  "CL": {
+    "name": "PartyRiskLimitsRequest",
+    "description": "Solicita la información sobre los límites de riesgo de una contraparte o parte involucrada."
+  },
+  "CR": {
+    "name": "PartyRiskLimitsUpdateReport",
+    "description": "Informe sobre los cambios en los límites de riesgo de una contraparte dentro de un sistema."
+  },
+  "EA": {
+    "name": "PayManagementReport",
+    "description": "Informe sobre la gestión de pagos, incluyendo la información relacionada con pagos y saldos."
+  },
+  "EB": {
+    "name": "PayManagementReportAck",
+    "description": "Confirmación de la recepción y procesamiento del informe sobre la gestión de pagos."
+  },
+  "DY": {
+    "name": "PayManagementRequest",
+    "description": "Solicita la acción relacionada con la gestión de pagos, como pagos o ajustes."
+  },
+  "DZ": {
+    "name": "PayManagementRequestAck",
+    "description": "Confirmación de la solicitud relacionada con la gestión de pagos, como pagos o ajustes."
+  },
+  "AM": {
+    "name": "PositionMaintenanceReport",
+    "description": "Informe sobre el mantenimiento de las posiciones, que incluye actualizaciones o cambios en las mismas."
+  },
+  "AL": {
+    "name": "PositionMaintenanceRequest",
+    "description": "Solicita la actualización o modificación de las posiciones en un sistema de negociación."
+  },
+  "AP": {
+    "name": "PositionReport",
+    "description": "Informe sobre el estado de las posiciones de un participante en el mercado."
+  },
+  "DL": {
+    "name": "PositionTransferInstruction",
+    "description": "Instrucción para transferir posiciones de un participante a otro en un sistema de negociación."
+  },
+  "DM": {
+    "name": "PositionTransferInstructionAck",
+    "description": "Confirmación de la recepción y procesamiento de una instrucción de transferencia de posiciones."
+  },
+  "DN": {
+    "name": "PositionTransferReport",
+    "description": "Informe sobre el estado de una transferencia de posiciones dentro de un sistema de negociación."
+  },
+  "S": {
+    "name": "Quote",
+    "description": "Mensaje que proporciona una cotización o precio para un activo o conjunto de activos en el mercado."
+  },
+  "CW": {
+    "name": "QuoteAck",
+    "description": "Confirmación de la recepción de una cotización proporcionada a través de un mensaje de cotización."
+  },
+  "Z": {
+    "name": "QuoteCancel",
+    "description": "Solicita la cancelación de una cotización previamente proporcionada en el sistema."
+  },
+  "R": {
+    "name": "QuoteRequest",
+    "description": "Solicita una cotización o precio para un activo o conjunto de activos en el mercado."
+  },
+  "EC": {
+    "name": "SettlementStatusRequest",
+    "description": "Solicita el estado de una liquidación pendiente de una transacción o operación."
+  },
+  "ED": {
+    "name": "SettlementStatusRequestAck",
+    "description": "Confirmación de la solicitud de estado sobre una liquidación pendiente."
+  },
+  "CD": {
+    "name": "StreamAssignmentReport",
+    "description": "Informe sobre la asignación de un flujo de datos o negociación a un participante o contraparte."
+  },
+  "CE": {
+    "name": "StreamAssignmentReportACK",
+    "description": "Confirmación de la recepción y procesamiento de un informe sobre la asignación de un flujo."
+  },
+  "CC": {
+    "name": "StreamAssignmentRequest",
+    "description": "Solicita la asignación de un flujo de datos o negociación a una contraparte específica."
+  },
+  "EP": {
+    "name": "TestActionReport",
+    "description": "Informe que describe los resultados de una acción de prueba realizada en un sistema."
+  },
+  "EN": {
+    "name": "TestActionRequest",
+    "description": "Solicita la ejecución de una acción de prueba dentro de un entorno controlado."
+  },
+  "EO": {
+    "name": "TestActionRequestAck",
+    "description": "Confirmación de la recepción y ejecución de una solicitud de acción de prueba."
+  },
+  "1": {
+    "name": "TestRequest",
+    "description": "Solicita la ejecución de una prueba de funcionamiento en el sistema de negociación."
+  },
+  "EL": {
+    "name": "TestSuiteDefinitionRequest",
+    "description": "Solicita la definición de un conjunto de pruebas que debe ejecutarse dentro de un sistema."
+  },
+  "EM": {
+    "name": "TestSuiteDefinitionRequestAck",
+    "description": "Confirmación de la solicitud de definición de un conjunto de pruebas en el sistema."
+  },
+  "DX": {
+    "name": "TradeAggregationReport",
+    "description": "Informe sobre la agregación de transacciones o acuerdos de negociación dentro de un periodo específico."
+  },
+  "DW": {
+    "name": "TradeAggregationRequest",
+    "description": "Solicita la agregación de operaciones o transacciones de acuerdo con criterios establecidos."
+  },
+  "AE": {
+    "name": "TradeCaptureReport",
+    "description": "Informe que captura los detalles de una transacción realizada en el mercado."
+  },
+  "AR": {
+    "name": "TradeCaptureReportAck",
+    "description": "Confirmación de la recepción y procesamiento de un informe de captura de transacción."
+  },
+  "AD": {
+    "name": "TradeCaptureReportRequest",
+    "description": "Solicita la captura o los detalles de una transacción dentro de un sistema de negociación."
+  },
+  "AQ": {
+    "name": "TradeCaptureReportRequestAck",
+    "description": "Confirmación de la solicitud de captura de transacción en un sistema de negociación."
+  },
+  "DC": {
+    "name": "TradeMatchReport",
+    "description": "Informe sobre la coincidencia de operaciones o transacciones en un sistema de negociación."
+  },
+  "DD": {
+    "name": "TradeMatchReportAck",
+    "description": "Confirmación de la recepción y procesamiento de un informe de coincidencia de transacciones."
+  },
+  "BJ": {
+    "name": "TradingSessionList",
+    "description": "Lista de sesiones de negociación disponibles en un sistema o mercado específico."
+  }
+}

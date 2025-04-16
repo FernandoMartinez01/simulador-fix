@@ -17,3 +17,7 @@ instance/
 
 # Otros
 *.log
+
+# Archivos de configuración
+tags/
+mensajes/

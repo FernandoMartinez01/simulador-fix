@@ -1,5 +1,13 @@
 from flask import Flask, render_template, request
-from fix_tags import fix_tags
+import json
+import re
+
+# Cargar archivos JSON
+with open('static/data/tags_con_descripciones.json', encoding='utf-8') as f:
+    tags_con_descripciones = json.load(f)
+
+with open('static/data/mensajes_con_desc.json', encoding='utf-8') as f:
+    mensajes_con_desc = json.load(f)
 
 app = Flask(__name__)
 
@@ -43,26 +51,41 @@ def simulador():
 def errores():
     return render_template("errores.html")
 
-@app.route('/validar', methods=['GET', 'POST'])
-def validar():
+@app.route('/parser', methods=['GET', 'POST'])
+def parser():
     parsed_fix = []
     raw_fix = ""
+    message_name = None
+    message_description = None
 
     if request.method == 'POST':
         raw_fix = request.form['raw_fix']
-        if raw_fix:
-            fix_pairs = raw_fix.strip().split('|')
-            for pair in fix_pairs:
-                if '=' in pair:
-                    tag, value = pair.split('=', 1)
-                    description = fix_tags.get(tag, 'Descripción no encontrada')
-                    parsed_fix.append({
-                        'tag': tag,
-                        'value': value,
-                        'description': description
-                    })
+        
+        # Definir los delimitadores como tabulador (\t) y pipe (|), usando una expresión regular
+        delimiters = r'[\t|]'  # Usamos un grupo de caracteres (tabulador y pipe) como delimitadores
+        
+        # Dividir el mensaje utilizando tabulador o pipe
+        fix_pairs = re.split(delimiters, raw_fix.strip())
 
-    return render_template('validar.html', parsed_fix=parsed_fix, raw_fix=raw_fix)
+        for pair in fix_pairs:
+            if '=' in pair:
+                tag, value = pair.split('=', 1)
+                tag_info = tags_con_descripciones.get(tag, {})
+                parsed_fix.append({
+                    'tag': tag,
+                    'value': value,
+                    'name': tag_info.get('name', 'Nombre no encontrado'),
+                    'description': tag_info.get('description', 'Descripción no encontrada')
+                })
+
+                # Buscar nombre del mensaje (tag 35)
+                if tag == '35':
+                    msg_info = mensajes_con_desc.get(value, {})
+                    message_name = msg_info.get('name', 'Mensaje desconocido')
+                    message_description = msg_info.get('description', 'Descripción no disponible')
+
+    return render_template('parser.html', parsed_fix=parsed_fix, raw_fix=raw_fix,
+                           message_name=message_name, message_description=message_description)
 
 if __name__ == "__main__":
     app.run(debug=True)
